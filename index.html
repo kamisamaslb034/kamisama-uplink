@@ -560,13 +560,21 @@
                 <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-12">
                    
                    {/* Left Info */}
-                   <div className="text-center md:text-left md:w-1/3">
-                     <div className="text-2xl font-bold italic tracking-tighter text-[#BDF0E9] flex items-center justify-center md:justify-start gap-2 mb-2">
-                       <Cat size={24} className="text-[#49FFFF]"/> KAMISAMA<span className="text-[#ff00ff]">.EXE</span>
-                     </div>
-                     <p className="text-xs text-gray-500 font-mono mb-4">SYSTEM VERSION 2.0.77 <br/>© 2024 LAB-42 ESCAPEE. ALL RIGHTS RESERVED.</p>
-                     <div className="font-tech text-[10px] text-[#49FFFF]">{'>'} CONNECTION ESTABLISHED</div>
-                   </div>
+<div className="text-center md:text-left md:w-1/3">
+  <div className="text-2xl font-bold italic tracking-tighter text-[#BDF0E9] flex items-center justify-center md:justify-start gap-2 mb-2">
+    <Cat size={24} className="text-[#49FFFF]"/> KAMISAMA<span className="text-[#ff00ff]">.EXE</span>
+  </div>
+  
+  <p className="text-xs text-gray-500 font-mono mb-4">
+    SYSTEM VERSION 2.0.77 <br/>
+    © 2024 LAB-42 ESCAPEE. ALL RIGHTS RESERVED.
+    
+    {/* 👇 新增這一行：綠界審核必看！(記得不能有點) 👇 */}
+    <span className="text-[#49FFFF] mt-2 block font-bold">CONTACT: kamisamaslb034@gmail.com</span>
+  </p>
+  
+  <div className="font-tech text-[10px] text-[#49FFFF]">{'>'} CONNECTION ESTABLISHED</div>
+</div>
 
                    {/* Right: 2 Rows Grid */}
                    <div className="flex flex-col gap-3 md:w-auto items-center md:items-end">
@@ -604,6 +612,7 @@
     </script>
 </body>
 </html>
+
 
 
 
